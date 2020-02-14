@@ -18,6 +18,6 @@ export default function SearchBar({ onEmailChange }) {
   );
 }
 
-SearchBar.propTypes = {
-  onEmailChange: PropTypes.func.isRequired
-};
+// SearchBar.propTypes = {
+//   onEmailChange: PropTypes.func.isRequired
+// };

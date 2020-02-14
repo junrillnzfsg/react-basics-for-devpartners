@@ -1,18 +1,16 @@
 import React, { useState } from "react";
-import "./styles.css";
-
+import data from "./data";
 import SearchBar from "./components/SearchBar";
 
+import "./styles.css";
+
 export default function App() {
-  const [email, setEmail] = useState("");
-  const handleEmailChange = e => {
-    console.log(e);
-  };
+  console.log(data);
   return (
     <div className="App">
-      <SearchBar onEmailChange={handleEmailChange} />
-      {!email && <p>No Results!</p>}
-      {email}
+      <SearchBar />
+      {/* {!email && <p>No Results!</p>}
+      {email} */}
     </div>
   );
 }
